@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9A56E28E-BDAE-4B7F-BDBD-07242C2E58E9}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>GraphicsLanguagesII_OpenGL</RootNamespace>
+    <ProjectName>OpenGL_Framework</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\glew-1.9.0\include;..\glfw-2.7.6\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\glew-1.9.0\lib;$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>GLFW.lib;glew32sd.lib;opengl32.lib;glu32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Component.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EntityManager.cpp" />
+    <ClCompile Include="LightManager.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="RenderableModel.cpp" />
+    <ClCompile Include="Renderer2D.cpp" />
+    <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MouseShader.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="Renderable.cpp" />
+    <ClCompile Include="Renderable2D.cpp" />
+    <ClCompile Include="RenderableElements.cpp" />
+    <ClCompile Include="RenderableText.cpp" />
+    <ClCompile Include="Renderer.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Spaceship.cpp" />
+    <ClCompile Include="TextBillboard.cpp" />
+    <ClCompile Include="Texture2D.cpp" />
+    <ClCompile Include="TextureFont.cpp" />
+    <ClCompile Include="ThrusterShader.cpp" />
+    <ClCompile Include="UIManager.cpp" />
+    <ClCompile Include="Utility\Matrix.cpp" />
+    <ClCompile Include="Utility\objloader\list.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\objLoader.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\obj_parser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\string_extra.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\image_DXT.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\image_helper.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\SOIL.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\stb_image_aug.c">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Utility\Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="Component.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="EntityManager.h" />
+    <ClInclude Include="FileIO.h" />
+    <ClInclude Include="LightManager.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="RenderableModel.h" />
+    <ClInclude Include="Renderer2D.h" />
+    <ClInclude Include="GameMain.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="MouseShader.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="Renderable2D.h" />
+    <ClInclude Include="RenderableElements.h" />
+    <ClInclude Include="RenderableText.h" />
+    <ClInclude Include="Renderer.h" />
+    <ClInclude Include="RendererCommon.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Spaceship.h" />
+    <ClInclude Include="TextBillboard.h" />
+    <ClInclude Include="Texture2D.h" />
+    <ClInclude Include="TextureFont.h" />
+    <ClInclude Include="ThrusterShader.h" />
+    <ClInclude Include="UIManager.h" />
+    <ClInclude Include="UI_Component_Button.h" />
+    <ClInclude Include="UI_Component_Image.h" />
+    <ClInclude Include="UI_Component_Text.h" />
+    <ClInclude Include="UI_Component_Transform.h" />
+    <ClInclude Include="Utility\Matrix.h" />
+    <ClInclude Include="Utility\objloader\list.h" />
+    <ClInclude Include="Utility\objloader\objLoader.h" />
+    <ClInclude Include="Utility\objloader\obj_parser.h" />
+    <ClInclude Include="Utility\objloader\string_extra.h" />
+    <ClInclude Include="Utility\soil\image_DXT.h" />
+    <ClInclude Include="Utility\soil\image_helper.h" />
+    <ClInclude Include="Utility\soil\SOIL.h" />
+    <ClInclude Include="Utility\soil\stbi_DDS_aug.h" />
+    <ClInclude Include="Utility\soil\stbi_DDS_aug_c.h" />
+    <ClInclude Include="Utility\soil\stb_image_aug.h" />
+    <ClInclude Include="Utility\Vector.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Fonts\amble47.fnt" />
+    <None Include="Content\Fonts\amble47_0.png" />
+    <None Include="Content\Fonts\papyrus.fnt" />
+    <None Include="Content\Fonts\papyrus_0.png" />
+    <None Include="Content\Shaders\fs.glsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Content\Shaders\fsCubeMap.glsl" />
+    <None Include="Content\Shaders\fsFont.glsl" />
+    <None Include="Content\Shaders\fsLights.glsl" />
+    <None Include="Content\Shaders\vs.glsl">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="Content\Shaders\vsCubeMap.glsl" />
+    <None Include="Content\Shaders\vsFont.glsl" />
+    <None Include="Content\Shaders\vsLights.glsl" />
+    <None Include="Content\Shaders\vsMouse.glsl" />
+    <None Include="Content\Shaders\vsThruster.glsl" />
+    <None Include="Content\Textures\1px.png" />
+    <None Include="Content\Textures\field_128_cube.dds" />
+    <None Include="Content\Textures\firefly.png" />
+    <None Include="Content\Textures\planetbackground.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Models\barrel.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Models\horse.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Models\plane.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Models\sphere.obj">
+      <FileType>Document</FileType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

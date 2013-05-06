@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\renderer">
+      <UniqueIdentifier>{01d99361-309a-41ff-b5bf-a9936858654c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game">
+      <UniqueIdentifier>{5577e528-6af0-4d97-8c08-edc9334ac985}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>{5e4e0e6a-f383-47e5-b85d-ec560bd7e7a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Shaders">
+      <UniqueIdentifier>{a816d32a-5b62-48ae-ac39-ce8ebcf01fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\input">
+      <UniqueIdentifier>{eead36ba-5042-42bf-bb6a-28d2392510a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility">
+      <UniqueIdentifier>{1b46b970-23e8-4b8d-88ae-9ebed1f68e0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility\soil">
+      <UniqueIdentifier>{103fc7bf-b996-47ac-8d20-cbc1a59d2bed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Textures">
+      <UniqueIdentifier>{8450cc45-3acc-4da9-81e6-8c4d449db8e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\game\Objects">
+      <UniqueIdentifier>{0163111e-4e08-4ac4-ba23-9768162acef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\Renderables">
+      <UniqueIdentifier>{e892acde-46ce-4ac4-9a8c-367db6e7bc50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\2D">
+      <UniqueIdentifier>{e688d3e2-a63b-43bc-8cbb-d3edce55f1cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\shaders">
+      <UniqueIdentifier>{cfd06cff-4f42-4919-8934-772ffa03d91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\shaders\deprecated">
+      <UniqueIdentifier>{45f1f96a-1ccf-49b7-933a-1dbcf8811f61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\component model">
+      <UniqueIdentifier>{0f71bc9b-7eb0-4f03-bd43-74b3501693d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\component model\components">
+      <UniqueIdentifier>{38b25e62-cda1-4ec5-967a-934c76c97b23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\component model\ui components">
+      <UniqueIdentifier>{5143630d-d918-4a8e-b9ec-ad89d4d303d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ui">
+      <UniqueIdentifier>{05a731f5-cf66-443d-a3d7-e3517fc117ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utility\objloader">
+      <UniqueIdentifier>{1aa4c2e4-988c-4231-90aa-309ba071b6f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\Meshes">
+      <UniqueIdentifier>{2111d110-5f67-4f16-afde-915066b3b0a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Models">
+      <UniqueIdentifier>{292f25f4-e6f8-4228-8edc-6e27d0dacd1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Content\Fonts">
+      <UniqueIdentifier>{20bf23ab-ec1e-406d-b46c-47b38cdf7d99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\materials">
+      <UniqueIdentifier>{18e234e1-e325-4420-80a4-b5c48bf839c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\renderer\lighting">
+      <UniqueIdentifier>{a8c1357f-93a0-4185-82f6-85854a586b58}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="GameMain.cpp">
+      <Filter>Source Files\game</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Matrix.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\Vector.cpp">
+      <Filter>Source Files\utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Shader.cpp">
+      <Filter>Source Files\renderer\shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\input</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\image_DXT.c">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\image_helper.c">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\SOIL.c">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\soil\stb_image_aug.c">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Quad.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseShader.cpp">
+      <Filter>Source Files\renderer\shaders\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="ThrusterShader.cpp">
+      <Filter>Source Files\renderer\shaders\deprecated</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderable2D.cpp">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableElements.cpp">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableText.cpp">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBillboard.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer2D.cpp">
+      <Filter>Source Files\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureFont.cpp">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderTarget.cpp">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture2D.cpp">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spaceship.cpp">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Component.cpp">
+      <Filter>Source Files\component model</Filter>
+    </ClCompile>
+    <ClCompile Include="Entity.cpp">
+      <Filter>Source Files\component model</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityManager.cpp">
+      <Filter>Source Files\component model</Filter>
+    </ClCompile>
+    <ClCompile Include="UIManager.cpp">
+      <Filter>Source Files\ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\obj_parser.cpp">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\objLoader.cpp">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\string_extra.cpp">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\objloader\list.cpp">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\renderer\Meshes</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableModel.cpp">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClCompile>
+    <ClCompile Include="Material.cpp">
+      <Filter>Source Files\renderer\materials</Filter>
+    </ClCompile>
+    <ClCompile Include="LightManager.cpp">
+      <Filter>Source Files\renderer\lighting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="common.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMain.h">
+      <Filter>Source Files\game</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Matrix.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\Vector.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Shader.h">
+      <Filter>Source Files\renderer\shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Source Files\input</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\image_DXT.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\image_helper.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\SOIL.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\stb_image_aug.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\stbi_DDS_aug.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\soil\stbi_DDS_aug_c.h">
+      <Filter>Source Files\utility\soil</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Quad.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="RendererCommon.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseShader.h">
+      <Filter>Source Files\renderer\shaders\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="ThrusterShader.h">
+      <Filter>Source Files\renderer\shaders\deprecated</Filter>
+    </ClInclude>
+    <ClInclude Include="FileIO.h">
+      <Filter>Source Files\utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable2D.h">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableElements.h">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableText.h">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBillboard.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer2D.h">
+      <Filter>Source Files\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureFont.h">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderTarget.h">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture2D.h">
+      <Filter>Source Files\renderer\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Spaceship.h">
+      <Filter>Source Files\game\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Component.h">
+      <Filter>Source Files\component model</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Source Files\component model</Filter>
+    </ClInclude>
+    <ClInclude Include="EntityManager.h">
+      <Filter>Source Files\component model</Filter>
+    </ClInclude>
+    <ClInclude Include="UIManager.h">
+      <Filter>Source Files\ui</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\objloader\obj_parser.h">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\objloader\objLoader.h">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\objloader\string_extra.h">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\objloader\list.h">
+      <Filter>Source Files\utility\objloader</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Source Files\renderer\Meshes</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Component_Transform.h">
+      <Filter>Source Files\component model\ui components</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Component_Image.h">
+      <Filter>Source Files\component model\ui components</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Component_Button.h">
+      <Filter>Source Files\component model\ui components</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableModel.h">
+      <Filter>Source Files\renderer\Renderables</Filter>
+    </ClInclude>
+    <ClInclude Include="Material.h">
+      <Filter>Source Files\renderer\materials</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Component_Text.h">
+      <Filter>Source Files\component model\ui components</Filter>
+    </ClInclude>
+    <ClInclude Include="LightManager.h">
+      <Filter>Source Files\renderer\lighting</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Content\Shaders\vs.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\fs.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\vsThruster.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\vsMouse.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Textures\firefly.png">
+      <Filter>Content\Textures</Filter>
+    </None>
+    <None Include="Content\Textures\planetbackground.jpg">
+      <Filter>Content\Textures</Filter>
+    </None>
+    <None Include="Content\Shaders\fsFont.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\vsFont.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\vsLights.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Models\barrel.obj">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="Content\Fonts\amble47.fnt">
+      <Filter>Content\Fonts</Filter>
+    </None>
+    <None Include="Content\Fonts\amble47_0.png">
+      <Filter>Content\Fonts</Filter>
+    </None>
+    <None Include="Content\Fonts\papyrus.fnt">
+      <Filter>Content\Fonts</Filter>
+    </None>
+    <None Include="Content\Fonts\papyrus_0.png">
+      <Filter>Content\Fonts</Filter>
+    </None>
+    <None Include="Content\Shaders\fsCubeMap.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Textures\field_128_cube.dds">
+      <Filter>Content\Textures</Filter>
+    </None>
+    <None Include="Content\Shaders\vsCubeMap.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Shaders\fsLights.glsl">
+      <Filter>Content\Shaders</Filter>
+    </None>
+    <None Include="Content\Models\horse.obj">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="Content\Textures\1px.png">
+      <Filter>Content\Textures</Filter>
+    </None>
+    <None Include="Content\Models\plane.obj">
+      <Filter>Content\Models</Filter>
+    </None>
+    <None Include="Content\Models\sphere.obj">
+      <Filter>Content\Models</Filter>
+    </None>
+  </ItemGroup>
+</Project>
